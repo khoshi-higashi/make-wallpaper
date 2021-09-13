@@ -35,5 +35,6 @@ for file in files: # ホーム画面用の処理
 
 for file in files: # ロック画面用の処理
   im = Image.open(os.path.join(dir_name, file))
-  im_new = add_margin(im, 141+410, 0, 0, 0, (255, 255, 255))
+  # im_new = add_margin(im, 141+410, 0, 0, 0, (255, 255, 255))
+  im_new = add_margin(im, 141+410, 0, 0, 0, (221, 238, 255))
   im_new.save(os.path.join(Lock_dir_name, file))
